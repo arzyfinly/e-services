@@ -3,7 +3,7 @@
 @section('content')
     <div class="container py-4">
         <div class="row">
-        Home page Nyhehehehehehe
+            About page
         </div>
     </div>
 @endsection 
