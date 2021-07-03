@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('index');
 // });
 
-Route::view('/', [\App\Http\Controllers\PagesController::class, 'index'])->name('home');
+Route::view('/', [\App\Http\Controllers\PagesController::class, 'index'])->name('index');
 Route::view('/about', [\App\Http\Controllers\PagesController::class, 'about'])->name('about');
 Route::view('/pesan', [\App\Http\Controllers\PagesController::class, 'pesan'])->name('pesan');
+Route::post('/pesan/finish', [\App\Http\Controllers\PemesananController::class, 'finish'])->name('finish');
