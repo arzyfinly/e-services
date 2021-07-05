@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Pemesanan;
 
-class PemesananController extends Controller
+class PemesananController extends Controller 
 {
     //
     public function finish(Request $request){
@@ -20,5 +21,12 @@ class PemesananController extends Controller
             'tgl_pesan' =>  $time_now
         ]);
         return view('pesan');
+    }
+
+    public function tampil(){
+        $pemesanan = Pemesanan::all();
+        return view('admin', compact(
+            'pemesanan'
+        ));
     }
 }

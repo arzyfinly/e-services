@@ -8,7 +8,7 @@
                 <div class="container ">
                         <div class="col-12">
                           <h1>PESAN SEKARANG</h1>
-                          <span>Di larang keras menggunakan informasi sembarang</span>
+                          <span>Di larang keras menggunakan informasi Acak</span>
                           <hr class="mt-1">
                         </div>
                         <div class="col-12">

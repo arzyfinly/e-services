@@ -15,4 +15,7 @@ class PagesController extends Controller
     public function pesan(){
         return view('pesan');
     }
+    public function admin(){
+        return view('admin');
+    }
 }
