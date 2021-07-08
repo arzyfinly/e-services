@@ -5,7 +5,7 @@
     <form method="POST" action="/pesan/finish">
         {{ csrf_field()}}
             <section class="order-form my-4 ">
-                <div class="container ">
+                <div class="container ">`
                         <div class="col-12">
                           <h1>PESAN SEKARANG</h1>
                           <span>Di larang keras menggunakan informasi Acak</span>
