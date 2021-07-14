@@ -19,7 +19,10 @@
                 <td>{{$row -> gejala_kerusakan}}</td>
                 <td>{{$row -> alamat}}</td>
                 <td>{{$row -> tgl_pesan}}</td>
-                <td class="text-center"><a href="" class="btn btn-sn btn-info">Jawab</a> <a href="" class="btn btn-sn btn-danger">Delete</a></td>
+            <td class="text-center">
+                <a href="" class="btn btn-sn btn-info">Jawab</a> 
+            <a href="{{ url('pemesanan', $pemesanan->id_customer) }}" class="btn btn-sn btn-danger">Delete</a>
+            </td>
             </tr>
             @endforeach
         </table>

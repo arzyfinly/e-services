@@ -22,3 +22,4 @@ Route::view('/about', [\App\Http\Controllers\PagesController::class, 'about'])->
 Route::view('/pesan', [\App\Http\Controllers\PagesController::class, 'pesan'])->name('pesan');
 Route::post('/pesan/finish', [\App\Http\Controllers\PemesananController::class, 'finish'])->name('finish');
 Route::get('/admin', [\App\Http\Controllers\PemesananController::class, 'tampil'])->name('admin');
+Route::get('/admin/done', [\App\Http\Controllers\PemesananController::class, 'delete'])->name('admin');

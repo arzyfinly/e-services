@@ -29,4 +29,12 @@ class PemesananController extends Controller
             'pemesanan'
         ));
     }
+
+    public function delete($id_customer){
+        $pemesanan = Pemesanan::find($id_customer);
+        $pemesanan->delete();
+        return view('admin/done', compact(
+            'pemesanan'
+        ));
+    }
 }
